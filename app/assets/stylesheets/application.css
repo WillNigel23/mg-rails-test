@@ -33,6 +33,18 @@
   margin: 0 8px;
 }
 
+.button.-sort-name {
+  background-color: #dc2f2f;
+}
+
+.button.-sort-amount {
+  background-color: #402a23;
+}
+.button.-sort-amount:hover {
+  background-color: #2c2d34;
+  transition: 0.7s;
+}
+
 .button:hover {
   background-color: #002ead;
   transition: 0.7s;
@@ -43,3 +55,12 @@
   outline-style: solid;
   box-shadow: 0 0 0 4px #5a01a7;
 }
+
+table, th, td {
+  border: 1px solid;
+}
+
+th, td {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+

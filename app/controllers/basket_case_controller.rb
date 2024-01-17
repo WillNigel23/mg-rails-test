@@ -12,6 +12,8 @@ class BasketCaseController < ApplicationController
 
   def order_by_amount
     # code here
+    @list_items = @list_items.sort_by { |name, qty| qty }
+    @list_items = @list_items.reverse if params.has_key?(:order) && params[:order] == "desc"
 
     render 'basket_case/index'
   end
